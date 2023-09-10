@@ -1,0 +1,28 @@
+* dmenu - dynamic menu
+dmenu is an efficient dynamic menu for X.  And this is nowislewis's
+version for dmenu some patches.
+
+Please choose =release= branch for daily use:
+
+#+begin_src bash
+git checkout release
+#+end_src
+Branch Description:
++ =release= is the one you should use, which is the result of merging =dev= with the patched versions.
++ =master= branch is in sync with the originaldwm project at https://git.suckless.org/dmenu .
++ =dev= is the branch of all development work, you may track this branch to see basic customization for dwm.
++ other branches are just patches.
+
+* Requirements
+In order to build dmenu you need the Xlib header files.
+* Installation
+Edit config.mk to match your local setup (dmenu is installed into
+the =/usr/local= namespace by default).
+
+Afterwards enter the following command to build and install dmenu
+(if necessary as root):
+#+begin_src bash
+make clean install
+#+end_src
+* Running dmenu
+See the man page for details.
